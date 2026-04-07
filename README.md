@@ -6,6 +6,16 @@ The goal is simple: if a machine already has a bunch of work lined up, you shoul
 
 Right now the mod focuses on GregTech basic machine GUIs. When the machine state is clear enough, it shows the total remaining queued workload. If the full queue cannot be resolved cleanly, it falls back to the current recipe instead of pretending to know more than it does.
 
+## Contents
+
+- [What It Does](#what-it-does)
+- [Current Scope](#current-scope)
+- [Installation](#installation)
+- [Config](#config)
+- [Supported Machines](#supported-machines)
+- [Reporting Bugs](#reporting-bugs)
+- [Bug Report Template](#bug-report-template)
+
 ## What It Does
 
 - Adds a small `ETA: ...` line to the top-left of supported GregTech machine GUIs.
@@ -89,23 +99,3 @@ On / Off
 ### Screenshot
 Attach a screenshot of the open machine GUI here.
 ```
-
-## Development
-
-This repo is set up as a normal GTNH example-mod style workspace.
-
-Typical commands:
-
-- `./gradlew.bat build`
-- `./gradlew.bat runClient`
-
-If you are testing compatibility, try a few different GregTech basic machines and compare the shown ETA against the visible inputs and outputs in the machine GUI.
-
-## Version Notes
-
-`v0.1.1` is the first release I would hand to other people for real testing. It has:
-
-- queue ETA rendering in supported GregTech machine GUIs
-- final-recipe fallback behavior
-- optional debug overlay for support testing
-- a minimal in-GUI presentation instead of a large custom panel
