@@ -1,6 +1,10 @@
 # GTNH Queue ETA
 
-GTNH Queue ETA adds a small ETA readout to supported GregTech machine GUIs in GTNH.
+**Status: experimental prototype.** Queue estimates are unreliable and machine
+compatibility is still being tested. This project is not ready for general use.
+
+GTNH Queue ETA is a Java mod prototype intended to add an ETA readout to
+GregTech machine GUIs in GTNH.
 
 The goal is simple: if a machine already has a bunch of work lined up, you should be able to glance at the GUI and get a feel for how long the whole batch still has left to run.
 
@@ -8,7 +12,7 @@ Right now the mod focuses on GregTech basic machine GUIs. When the machine state
 
 ## Contents
 
-- [What It Does](#what-it-does)
+- [Intended Behavior](#intended-behavior)
 - [Current Scope](#current-scope)
 - [Installation](#installation)
 - [Config](#config)
@@ -16,7 +20,7 @@ Right now the mod focuses on GregTech basic machine GUIs. When the machine state
 - [Reporting Bugs](#reporting-bugs)
 - [Bug Report Template](#bug-report-template)
 
-## What It Does
+## Intended Behavior
 
 - Adds a small `ETA: ...` line to the top-left of supported GregTech machine GUIs.
 - Estimates total queued processing time from the machine's current workload.
@@ -25,7 +29,7 @@ Right now the mod focuses on GregTech basic machine GUIs. When the machine state
 
 ## Current Scope
 
-This first release is aimed at standard GregTech basic machine GUIs.
+The current prototype targets standard GregTech basic machine GUIs.
 
 That means it is a good fit for the usual singleblock processing machines, like the common LV/MV/HV machine family. It is not meant to promise perfect support for every GregTech-adjacent UI yet.
 
@@ -59,7 +63,8 @@ The debug overlay is off by default. Turn it on only if you are testing support 
 
 The mod is currently built around GregTech `MTEBasicMachine`-style GUIs.
 
-That is the support target for `v0.1.x`. If a machine looks like a normal GregTech basic machine and exposes enough state through its GUI, there is a good chance it will work. If it does not, the best next step is a bug report with a screenshot and machine name.
+That is the support target for `v0.1.x`. Compatibility has not been established across this machine family. Bug reports
+with a screenshot and machine name help identify failures.
 
 ## Reporting Bugs
 
